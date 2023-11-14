@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Threejs Architectural Visualization - By Jaibs</title>
+    <meta name="description" content="Threejs Architectural Visualization - By Jaibs">
+    <meta property="og:url" content="https://threejs-archviz.vercel.app/">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Threejs Architectural Visualization - By Jaibs">
+    <meta property="og:description" content="Threejs Architectural Visualization - By Jaibs">
+    <meta property="og:image" content="https://threejs-archviz.vercel.app/textures/imageSocial.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="twitter:domain" content="threejs-archviz.vercel.app/">
+    <meta property="twitter:url" content="https://threejs-archviz.vercel.app/">
+    <meta name="twitter:title" content="Threejs Architectural Visualization - By Jaibs">
+    <meta name="twitter:description" content="Threejs Architectural Visualization - By Jaibs">
+    <meta name="twitter:image" content="https://threejs-archviz.vercel.app/textures/imageSocial.jpg">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,shrink-to-fit=no,minimum-scale=1,maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/0004b432b9cd6516.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/b1c442fa9e7058d9.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/images/48d5cc1ad4f0c74b.png">
+    <link rel="manifest" href="fe4b8e59f3b0328a.webmanifest">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100;0,200;0,600;1,100&family=Libre+Baskerville:wght@700&display=swap" rel="stylesheet">
+
+    <body id="body">
+        <div class="lds-roller">
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="loading-bar"></div>
+        <div id="loading-text-intro">
+            <p>Please wait...</p>
+        </div>
+        <div id="btn-continue-explore"><a id="continue"><img src="assets/images/56fe1f9a60c03267.svg" alt="back"></a></div>
+        <div id="div-points">
+            <div class="point point-0 visible">
+                <div class="label"></div>
+                <div class="text">Stairs</div>
+            </div>
+            <div class="point point-1 visible">
+                <div class="label"></div>
+                <div class="text">Right top view</div>
+            </div>
+            <div class="point point-2 visible">
+                <div class="label"></div>
+                <div class="text">Left top view</div>
+            </div>
+            <div class="point point-3 visible">
+                <div class="label"></div>
+                <div class="text">Main bedrom</div>
+            </div>
+            <div class="point point-4 visible">
+                <div class="label"></div>
+                <div class="text">Back view</div>
+            </div>
+            <div class="point point-5 visible">
+                <div class="label"></div>
+                <div class="text">Top living room</div>
+            </div>
+            <div class="point point-6 visible">
+                <div class="label"></div>
+                <div class="text">Right pool</div>
+            </div>
+            <div class="point point-7 visible">
+                <div class="label"></div>
+                <div class="text">Awwwards Honorable Mention</div>
+            </div>
+        </div>
+        <div class="scrollContainer">
+            <div class="headerContainer">
+                <div id="header">
+                    <h1>Archviz</h1>
+                    <div id="middle-menu">
+                        <p class="about menu--item">About</p>
+                        <p class="customize menu--item">Customize</p>
+                    </div><a id="music"><img alt="Music toggle" width="22" height="22" src="assets/images/7e11dcad68999a38.svg"></a></div>
+            </div>
+            <div class="sectionContainer">
+                <div class="section" id="section-logo">
+                    <h1 data-splitting class="slide-vertical" id="titulo-explorar">Seashore<br><span>House</span></h1><a id="button-scroll"><svg class="svg-circle" xmlns="http://www.w3.org/2000/svg" width="44" height="44"><path d="m27.014 23.731-4.288 3.7V15.166a.686.686 0 1 0-1.372 0v12.26l-4.289-3.7a.687.687 0 0 0-.9 1.039l5.87 5.058 5.87-5.058a.687.687 0 0 0-.9-1.039Z" fill="#ffffff"/><g fill="none" stroke="#ffffff" stroke-width="1.5"><circle cx="22" cy="22" r="22" stroke="none"/><circle cx="22" cy="22" r="21.25"/></g></svg><p>Explore the real-time architectural visualization in threejs</p></a></div>
+                <div
+                    class="customize--container">
+                    <div class="customize--box"><a class="customize--close"><img src="assets/images/56fe1f9a60c03267.svg" alt="back"></a>
+                        <h2 class="customize--title">Customize the scene</h2>
+                        <ul class="customize--sunlight">
+                            <li class="midday">Midday</li>
+                            <li class="sunset active">Sunset</li>
+                        </ul><label>Sun rotation</label><input id="xposition" type="range" min="-100" max="100" value="38"> <label>Sun elevation</label><input id="yposition" type="range" min="1" max="80" value="27"> <label>Sun azimut</label><input id="zposition"
+                            type="range" min="-100" max="100" value="31">
+                        <p class="toggle-effects">Toggle Post Processing</p>
+                        <ul class="toggle-effects-aditional">
+                            <p id="ssao">Toggle ultimate Post Processing SSAO</p><small>Warning: Screen Space Ambient Occulusion is very expensive for GPU. Proceed at your own risk.</small></ul>
+                    </div>
+            </div>
+            <div class="customize--button--container">
+                <p class="customize--floating">Customize</p>
+            </div>
+            <div class="about--container">
+                <div class="about--box"><a class="about--close"><img src="assets/images/56fe1f9a60c03267.svg" alt="back"></a>
+                    <h2 class="about--title">About this project</h2>
+                    <p>This Threejs project was created by Ali Zaib to test the limits of 3D model visualization in most modern browsers. This allows for a glimpse into the future of what interactive experiences will be.</p>
+                    <p>In this project I tried not to respect the limits that exist in terms of performance. Therefore, this experience can be very intense for most computers these days.</p>
+                    <p>The 3D model was optimized in Blender from a purchased model. This is where I spend most of my time on these projects.</p>
+                    <p>Hope you like it and if you want you can follow me on Twitter and YouTube for more projects using Blender and Threejs.</p>
+                    <ul class="about--list">
+                        <li class="about--buttons"><a href="https://twitter.com/" target="_blank">Twitter</a></li>
+                        <li class="about--buttons"><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+                        <li class="about--buttons"><a href="https://github.com/alizaib0573" target="_blank">GitHub</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="canvas-container" class="fixed"><a id="button-zoom"><img alt="Explore" src="assets/images/e0e86d565eeb4c9d.svg"></a></div>
+        </div>
+        </div>
+    </body>
+    <script defer="defer" src="bundle.b9c216567cc970d1.js"></script>
+    <link href="main.css" rel="stylesheet">
+</head>
+
+</html>
